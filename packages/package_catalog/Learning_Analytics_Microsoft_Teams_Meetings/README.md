@@ -14,10 +14,9 @@ This package was primarily developed for higher ed but can be modified for K-12 
 Define the problem you seek to solve using this package, and list out the impact and benefits this package will have on learners, educators and the learning process.
 
 ## Package Setup Instructions
-Explanation of how to use the package: prerequisites (like subscriptions), what types of data transfer services can be used to ingest in OEA, etc.
+![](https://github.com/ivybarley/OpenEduAnalytics/blob/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/docs/images/Learning_Analytics_Microsoft_Teams_Package_Setup_Instructions.png)
 
-## Machine Learning Approach (if applicable)
-If the package involves predictive modelling, list out the steps used to build the machine learning models for this package.
+Explanation of how to use the package: prerequisites (like subscriptions), what types of data transfer services can be used to ingest in OEA, etc.
 
 ## Data Sources
 Description of data sources: what it is used for, data available, data format and the list of relevant OEA modules that can be used as data sources for this package.
