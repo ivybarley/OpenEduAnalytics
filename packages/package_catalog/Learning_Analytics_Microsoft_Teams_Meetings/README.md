@@ -1,6 +1,6 @@
 # Learning Analytics Package: Microsoft Teams Meetings
 
-The OEA Learning Analytics Package: Microsoft Teams Meetings provides a set of assets that provides a teacher or school leader with insights on learners' digital activity in Microsoft Teams Meetings at a class or course level. 
+The OEA Learning Analytics Package: Microsoft Teams Meetings contains a set of assets that provides a teacher or school leader with insights on learners' digital activity in Microsoft Teams Meetings at a class or course level. 
 
 Data from apps that provide Microsoft Teams Meeting activity including Microsoft Education Insights and Microsoft Graph can be combined with other data sources for different Learning Analytics use cases. 
 
