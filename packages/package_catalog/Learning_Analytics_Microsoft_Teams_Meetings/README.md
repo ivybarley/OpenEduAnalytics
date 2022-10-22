@@ -1,8 +1,10 @@
 # Learning Analytics Package: Microsoft Teams Meetings
 
-The OEA Learning Analytics Package: Microsoft Teams Meetings provides a set of assets that provides a teacher or school leader with insights on learners' digital activity in Microsoft Teams Meetings at a class or course level.
+The OEA Learning Analytics Package: Microsoft Teams Meetings provides a set of assets that provides a teacher or school leader with insights on learners' digital activity in Microsoft Teams Meetings at a class or course level. 
 
-Data from apps that provide Microsoft Teams Meeting activity including Microsoft Education Insights and Microsoft Graph can be combined with other data sources for different Learning Analytics use cases.
+Data from apps that provide Microsoft Teams Meeting activity including Microsoft Education Insights and Microsoft Graph can be combined with other data sources for different Learning Analytics use cases. 
+
+This package was primarily developed for higher ed but can be modified for K-12 scenarios.
 
 1. <ins>Guidance and documentation:</ins> This package provides guidance on the end-to-end process of developing a Learning Analytics use case project for Microsoft Teams Meetings through the problem statement and package impact (see below). The [OEA Use Case Documentation](https://github.com/microsoft/OpenEduAnalytics/blob/main/docs/use_cases/Open_Education_Analytics_Use_Case_Template_v3.docx) should be completed when developing the production-level implementation of this package, including: how to engage stakeholders in the project, prior research on the use case problem domain and theory, how to map data sources to the theory of the problem, and how to implement Microsoft’s Principles of Responsible Data and AI. <em> It is highly recommended this document be reviewed and completed by any education system considering using this package, and that the documentation be revised to the specific data and decisions for that system’s context. </em>
 
