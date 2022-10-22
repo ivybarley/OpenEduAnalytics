@@ -28,24 +28,39 @@ Define the problem you seek to solve using this package, and list out the impact
       *  More detailed information on the queries used are provided in the [Power BI folder](https://github.com/microsoft/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/powerbi#power-bi-setup-instructions). 
       
 ## Data Sources
-Description of data sources: what it is used for, data available, data format and the list of relevant OEA modules that can be used as data sources for this package.
+This package combines multiple data sources: 
+* <strong>School Information System (SIS)</strong>: School, grade level, and class roster.
+* <strong>Digital Engagement data</strong>: Application use, type of engagement (log-ins, Teams meeting attendance duration, etc.), date of the activity, and user information of the activities.
+
+This package can use several [OEA Modules](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules) to help ingest data sources that are typically used to understand patterns seen in hybrid student engagement (see below for list of relevant OEA modules). 
+
+| OEA Module | Description |
+| --- | --- |
+| [Ed-Fi Data Standards](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Education_Data_Standards/Ed-Fi) | For typical Student Information System (SIS) data, including school rosters, grade level and demographic information. N.B: The Ed-Fi module creation is still in progress. |
+| [Contoso SIS](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Student_and_School_Data_Systems) | Fictitious student in-person attendance data. |
+| [Microsoft Education Insights](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Education_Insights) | For Microsoft engagement/activity data, and can be used for SIS data. |
+| [Microsoft Graph](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Graph) | For other forms of Microsoft engagement/activity data. |
+
+These modules are then combined into single tables based on the types of data contained with them, using the [OEA schemas](https://github.com/microsoft/OpenEduAnalytics/tree/main/schemas) to ingest and transform the module data so that only the relevant columns are extracted from the stage 2 data. Below is the list of relevant OEA schema definitions used in this package.
+
+| OEA Schema | Description |
+| --- | --- |
+| [Digital Engagement Schema](https://github.com/microsoft/OpenEduAnalytics/tree/main/schemas/schema_catalog/Digital_Engagement_Schema) | For extracting forms digital engagement into a standardized OEA schema. |
+
 
 ## Package Components 
 Sample out-of-the box assets for this OEA package include: 
-1. [Data](https://github.com/microsoft/OpenEduAnalytics/tree/main/packages/package_creation_kit/data) for understanding the data relationships and standardized schema mappings used for certain groups of data.
-2. [Documentation](https://github.com/microsoft/OpenEduAnalytics/tree/main/packages/package_creation_kit/docs) for the Use Case Template and additional guildeines for deploying the package.
-3. [Notebooks](https://github.com/microsoft/OpenEduAnalytics/tree/main/packages/package_creation_kit/notebooks) for cleaning, transforming, anonymizing and enriching the data.
-4. [Pipeline](https://github.com/microsoft/OpenEduAnalytics/tree/main/packages/package_creation_kit/pipeline) for ingesting data into the data lake and automating the various stages of the process.
-5. [Power BI template](https://github.com/microsoft/OpenEduAnalytics/tree/main/packages/package_creation_kit/powerbi) for exploring, visualizing and deriving insights from the data.
-
-[include links to any other assets like tutorials, test data, etc you are providing as part of this package.]
+1. [Data](https://github.com/microsoft/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meeting/data): For understanding the data relationships and standardized schema mappings used for certain groups of data.
+2. [Documentation](https://github.com/microsoft/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meeting/docs): 
+      * [OEA Use Case Documentation Template](https://github.com/microsoft/OpenEduAnalytics/blob/main/docs/use_cases/Open_Education_Analytics_Use_Case_Template_v3.docx). 
+      * More detailed instructions for migrating from test data use, to production data use.
+3. [Notebook](https://github.com/microsoft/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meeting/notebooks): For aggregating, enriching, and curating data within the data lake.
+4. [Pipeline](https://github.com/microsoft/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meeting/pipeline): For the overarching data processing (i.e., aggregation, subsetting, schema transformation, etc.), and support for Power BI dashboards.
+5. [Power BI Template](https://github.com/microsoft/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meeting/powerbi): For exploring, visualizing, and deriving insights from the data.
 
 The [name of package] module [welcome contributions.](https://github.com/microsoft/OpenEduAnalytics/blob/main/docs/license/CONTRIBUTING.md) 
 
-This package was developed by [name of contributor] in partnership with [name of education system, if any]. The architecture and reference implementation for all modules is built on [Azure Synapse Analytics](https://azure.microsoft.com/en-us/services/synapse-analytics/) - with [Azure Data Lake Storage](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction) as the storage backbone,  and [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory/) providing the role-based access control.
-
-#### Additional Information
-Provide any additional information and resources.
+This package was developed by Microsoft Education. The architecture and reference implementation for all modules is built on [Azure Synapse Analytics](https://azure.microsoft.com/en-us/services/synapse-analytics/) - with [Azure Data Lake Storage](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction) as the storage backbone,  and [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory/) providing the role-based access control.
 
 # Legal Notices
 
