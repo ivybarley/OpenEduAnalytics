@@ -1,8 +1,12 @@
 # Learning Analytics Package: Microsoft Teams Meetings
 
-Provide an overview of the package and details on the guidelines and documentation used to create this package. 
+The OEA Learning Analytics Package: Microsoft Teams Meetings provides a set of assets that provides a teacher or school leader with insights on learners' digital activity in Microsoft Teams Meetings at a class or course level.
 
-Please use the [OEA Use Case Template](https://github.com/microsoft/OpenEduAnalytics/blob/main/docs/use_cases/Open_Education_Analytics_Use_Case_Template_v3.docx) which provides end-to-end guidance on developing a successful use case project including how to engage stakeholders in the project, prior research on the use case problem domain and theory, how to map data sources to the theory of the problem, and how to implement Microsoft’s Principles of Responsible Data and AI. It is highly recommended this document be reviewed by any education system considering using this package, and that the documentation be revised to the specific data and decisions for that system’s context.
+Data from apps that provide Microsoft Teams Meeting activity including Microsoft Education Insights and Microsoft Graph can be combined with other data sources for different Learning Analytics use cases.
+
+1. <ins>Guidance and documentation:</ins> This package provides guidance on the end-to-end process of developing a Learning Analytics use case project for Microsoft Teams Meetings through the problem statement and package impact (see below). The [OEA Use Case Documentation](https://github.com/microsoft/OpenEduAnalytics/blob/main/docs/use_cases/Open_Education_Analytics_Use_Case_Template_v3.docx) should be completed when developing the production-level implementation of this package, including: how to engage stakeholders in the project, prior research on the use case problem domain and theory, how to map data sources to the theory of the problem, and how to implement Microsoft’s Principles of Responsible Data and AI. <em> It is highly recommended this document be reviewed and completed by any education system considering using this package, and that the documentation be revised to the specific data and decisions for that system’s context. </em>
+
+2. <ins>Technical assets:</ins> Various assets are freely available in this package to help accelerate implementation of Learning Analytics use cases. Assets include descriptions of data sources, notebooks for data processing, a pipeline for data model building and deployment, and sample Power BI dashboards. See descriptions of technical assets below.
 
 ## Problem Statement and Package Impact
 Define the problem you seek to solve using this package, and list out the impact and benefits this package will have on learners, educators and the learning process.
