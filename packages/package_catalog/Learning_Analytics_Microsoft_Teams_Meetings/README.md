@@ -11,7 +11,7 @@ This package was primarily developed for higher education but can be modified fo
 2. <ins>Technical assets:</ins> Various assets are freely available in this package to help accelerate implementation of Learning Analytics use cases. Assets include descriptions of data sources, notebooks for data processing, a pipeline for data model building and deployment, and sample Power BI dashboards. See descriptions of technical assets below.
 
 ## Problem Statement and Package Impact
-With varied modes of learning, learning platforms and learner needs, educators have difficulty determining how students participate and learn in a class or course in-person, remote and in hybrid settings. Due to this, educators are not able to consolidate student learning activities and progress.
+With varied modes of learning, learning platforms and learner needs, educators have challenges determining how students participate and learn in a class or course in-person, remotely and in hybrid settings. Due to this, educators are not able to efficiently consolidate student learning activities and progress.
 
 The Learning Analytics: Microsoft Teams Meetings package provides dashboards that bring together signals from Microsoft Teams Meetings of how students learn and complete a course to help educators improve overall class participation. Educators can identify which courses, classes and students have lower or higher engagement in Microsoft Teams Meetings and the trends over time.
 
@@ -28,13 +28,13 @@ The assets in this package can be combined with course completion, academic asse
 2. Use the [Digital Engagement Schema pipeline](https://github.com/microsoft/OpenEduAnalytics/tree/main/schemas/schema_catalog/Digital_Engagement_Schema/pipeline) and process the compatible modules you choose to ingest. This will combine all module-tables into a unified table, and creates a single database for the Power BI dashboard. Visit the [Data](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/data) page for a detailed explanation of its use in the Power BI data model.
 3. Import and run the [Learning Analytics: Microsoft Teams Meetings pipeline template](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/pipeline) to combine SIS data sources into a Power BI data model like the example provided in the [Data](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/data) page.
     * This package pipeline aggregates SIS data from the [Microsoft Education Insights](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Education_Insights) and [Contoso SIS](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Student_and_School_Data_Systems) modules into a single student table for details on the specific tables being used.
-4. Use the Power BI dashboard to explore Learning Analytics: Microsoft Teams Meetings. Note that all pipelines create SQL views which can be accessed via your Synapse workspace Serverless SQL endpoint. Example dashboard concepts are [provided in this package](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/powerbi).
+4. Use the Power BI dashboard to explore the Learning Analytics: Microsoft Teams Meetings use case. Note that all pipelines create SQL views which can be accessed via your Synapse workspace Serverless SQL endpoint. Example dashboard concepts are [provided in this package](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/powerbi).
       *  More detailed information on the queries used are provided in the [Power BI folder](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/powerbi). 
       
 ## Data Sources
 This package combines multiple data sources: 
-* <strong>School Information System (SIS)</strong>: School, grade level, and class roster.
-* <strong>Digital Engagement data (Microsoft Teams Meetings) </strong>: Application use, type of engagement (log-ins, meeting attendance duration, etc), date of the activity, and user information of the activities.
+* <strong>School Information System (SIS)</strong>: School, class, and roster.
+* <strong>Digital Engagement data (Microsoft Teams Meetings)</strong>: Application use, type of engagement (log-ins, meeting attendance duration, etc), date of the activity, and user information of the activities.
 
 This package can use several [OEA Modules](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules) to help ingest data sources that are typically used to understand patterns seen in Learning Analytics (see below for list of relevant OEA modules). 
 
@@ -43,13 +43,13 @@ This package can use several [OEA Modules](https://github.com/microsoft/OpenEduA
 | [Student and School Data Systems](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Student_and_School_Data_Systems) | Fictitious student in-person attendance data. |
 | [Microsoft Education Insights](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Education_Insights) | For Microsoft engagement/activity data, and can be used for SIS data. |
 | [Microsoft Graph](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Graph) | For other forms of Microsoft engagement/activity data. |
-| [Ed-Fi Data Standards](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Education_Data_Standards/Ed-Fi) | For typical Student Information System (SIS) data, including school rosters, grade level and demographic information. N.B: The Ed-Fi module creation is still in progress. |
+| [Ed-Fi Data Standards](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Education_Data_Standards/Ed-Fi) | For typical Student Information System (SIS) data, including rosters, class and demographic information. N.B: The Ed-Fi module creation is still in progress. |
 
 These modules are then combined into single tables based on the types of data contained with them, using the [OEA schemas](https://github.com/microsoft/OpenEduAnalytics/tree/main/schemas) to ingest and transform the module data so that only the relevant columns are extracted from the stage 2 data. Below is the list of relevant OEA schema definitions used in this package.
 
 | OEA Schema | Description |
 | --- | --- |
-| [Digital Engagement Schema](https://github.com/microsoft/OpenEduAnalytics/tree/main/schemas/schema_catalog/Digital_Engagement_Schema) | For extracting forms digital engagement into a standardized OEA schema. |
+| [Digital Engagement Schema](https://github.com/microsoft/OpenEduAnalytics/tree/main/schemas/schema_catalog/Digital_Engagement_Schema) | For extracting forms of digital engagement into a standardized OEA schema. |
 
 
 ## Package Components 
