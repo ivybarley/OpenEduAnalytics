@@ -11,7 +11,11 @@ This package was primarily developed for higher education but can be modified fo
 2. <ins>Technical assets:</ins> Various assets are freely available in this package to help accelerate implementation of Learning Analytics use cases. Assets include descriptions of data sources, notebooks for data processing, a pipeline for data model building and deployment, and sample Power BI dashboards. See descriptions of technical assets below.
 
 ## Problem Statement and Package Impact
-Define the problem you seek to solve using this package, and list out the impact and benefits this package will have on learners, educators and the learning process.
+With varied modes of learning, learning platforms and learner needs, educators have difficulty determining how students participate and learn in a class or course in-person, remote and in hybrid settings. Due to this, educators are not able to consolidate student learning activities and progress.
+
+The Learning Analytics: Microsoft Teams Meetings package provides dashboards that bring together signals from Microsoft Teams Meetings of how students learn and complete a course to help educators improve overall class participation. Educators can identify which courses, classes and students have lower or higher engagement in Microsoft Teams Meetings and the trends over time.
+
+The assets in this package can be combined with course completion, academic assessments, graduation rates, competency measures, mastery data, or other outcome data to identify how patterns of engagement relate to learning outcomes.
 
 ## Package Setup Instructions
 ![](https://github.com/ivybarley/OpenEduAnalytics/blob/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/docs/images/Learning_Analytics_Microsoft_Teams_Package_Setup_Instructions.png)
