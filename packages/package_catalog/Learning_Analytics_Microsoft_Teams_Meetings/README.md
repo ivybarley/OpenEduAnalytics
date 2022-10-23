@@ -30,13 +30,13 @@ Define the problem you seek to solve using this package, and list out the impact
 ## Data Sources
 This package combines multiple data sources: 
 * <strong>School Information System (SIS)</strong>: School, grade level, and class roster.
-* <strong>Digital Engagement data</strong>: Application use, type of engagement (log-ins, Teams meeting attendance duration, etc.), date of the activity, and user information of the activities.
+* <strong>Digital Engagement data (Microsoft Teams Meetings) </strong>: Application use, type of engagement (log-ins, meeting attendance duration, etc), date of the activity, and user information of the activities.
 
-This package can use several [OEA Modules](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules) to help ingest data sources that are typically used to understand patterns seen in hybrid student engagement (see below for list of relevant OEA modules). 
+This package can use several [OEA Modules](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules) to help ingest data sources that are typically used to understand patterns seen in Learning Analytics (see below for list of relevant OEA modules). 
 
 | OEA Module | Description |
 | --- | --- |
-| [Contoso SIS](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Student_and_School_Data_Systems) | Fictitious student in-person attendance data. |
+| [Student and School Data Systems](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Student_and_School_Data_Systems) | Fictitious student in-person attendance data. |
 | [Microsoft Education Insights](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Education_Insights) | For Microsoft engagement/activity data, and can be used for SIS data. |
 | [Microsoft Graph](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Graph) | For other forms of Microsoft engagement/activity data. |
 | [Ed-Fi Data Standards](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Education_Data_Standards/Ed-Fi) | For typical Student Information System (SIS) data, including school rosters, grade level and demographic information. N.B: The Ed-Fi module creation is still in progress. |
