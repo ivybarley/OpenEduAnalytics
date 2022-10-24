@@ -13,7 +13,7 @@ This package was primarily developed for higher education but can be modified fo
 ## Problem Statement and Package Impact
 With varied modes of learning, learning platforms and learner needs, educators have challenges determining how students participate and learn in a class or course in-person, remotely and in hybrid settings. Due to this, they are not able to efficiently consolidate student learning activities and progress.
 
-The Learning Analytics: Microsoft Teams Meetings package provides dashboards that bring together signals from Microsoft Teams Meetings of how students learn and complete a course to help educators improve overall class participation. Educators can identify which courses, classes and students have lower or higher engagement in Microsoft Teams Meetings and the trends over time.
+The Learning Analytics: Microsoft Teams Meetings package provides dashboards that bring together signals from Microsoft Teams Meetings of how students learn and complete a course to help educators improve overall class participation. Educators can identify which courses, classes and students have lower or higher levels of engagement in Microsoft Teams Meetings and the trends over time.
 
 The assets in this package can be combined with course completion, academic assessments, graduation rates, competency measures, mastery data, or other outcome data to identify how patterns of engagement in Microsoft Teams Meetings relate to learning outcomes.
 
