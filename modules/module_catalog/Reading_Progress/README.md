@@ -1,9 +1,9 @@
 <img align="right" height="100" src="https://github.com/microsoft/OpenEduAnalytics/blob/main/docs/pics/oea-logo-nobg.png">
 
 # Reading Progress Module
-[Reading Progress](https://learn.microsoft.com/en-us/training/educator-center/product-guides/reading-progress/) is a free tool in Microsoft Teams that helps students practice their reading fluency. With Reading Progress, students' reading performance can be reviewed and analyzed with recommendations on how they can improve their reading fluency.
+[Reading Progress](https://learn.microsoft.com/en-us/training/educator-center/product-guides/reading-progress/) is a free tool in Microsoft Teams that helps students practice their reading fluency through independent reading practice. With Reading Progress, students' reading performance can be reviewed and analyzed, and recommendations are provided on how students can improve their reading fluency.
 
-The Reading Progress data is available through Microsoft Educaation Insights and can be landed into your organization's data lake with our existing [OEA Microsoft Education Insights module](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Education_Insights).
+Reading Progress data is available through Microsoft Educaation Insights and can be landed into your organization's data lake with our existing [OEA Microsoft Education Insights module](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Education_Insights).
 
 Education Insights requires the implementation of [Microsoft School Data Sync](https://sds.microsoft.com/) on O365, which provides school and class roster data, to enable its reports in Teams. For production data, you will need an O365 education tenant as Microsoft Education Insights is only enabled for education tenants.
 
