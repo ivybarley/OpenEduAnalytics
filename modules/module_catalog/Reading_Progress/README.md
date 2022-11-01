@@ -9,7 +9,13 @@ Education Insights requires the implementation of [Microsoft School Data Sync](h
 
  
 ## Problem Statement and Module Impact
-Text
+Reading fluency is top of mind for many educators and parents. Defined as a reader’s ability to read text with accuracy, speed, and expression, reading fluency is a reliable factor to determining a student comprehends text.
+
+Reading Progress, available in 100 languages, provides repeated oral reading practice for learners with the power of error analysis to identify how to support readers fluency. This relieves pressure for students, reduces classroom disruption, and redirects educator time to targeted instruction.
+
+Reading Progress data can be used for different scenarios including:
+- Dashboards for education leaders to track student fluency practice at a school or district level.
+- Combining Reading Progress data with other data sources to show the relationship between reading fluency and other metrics like assessments and attendance, and student demographic data.
 
 ## Module Setup Instructions
 1. Ensure you have proper [Azure subscription and credentials](https://github.com/microsoft/OpenEduAnalytics/tree/main/framework) and setup the [most recent version of OEA framework](https://github.com/microsoft/OpenEduAnalytics/tree/main/framework#setup-of-framework-assets). This will include the most recent version of the [OEA Python class](https://github.com/microsoft/OpenEduAnalytics/blob/main/framework/synapse/notebook/OEA_py.ipynb). 
