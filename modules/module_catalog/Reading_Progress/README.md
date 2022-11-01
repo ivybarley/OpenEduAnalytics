@@ -1,9 +1,9 @@
 <img align="right" height="100" src="https://github.com/microsoft/OpenEduAnalytics/blob/main/docs/pics/oea-logo-nobg.png">
 
 # Reading Progress Module
-[Reading Progress](https://learn.microsoft.com/en-us/training/educator-center/product-guides/reading-progress/) is a free tool by Microsoft that helps students practice their reading fluency. With Reading Progress, students' reading performance can be analyzed and recommendations are provided on how they can improve their reading fluency.
+[Reading Progress](https://learn.microsoft.com/en-us/training/educator-center/product-guides/reading-progress/) is a free tool in Microsoft Teams that helps students practice their reading fluency. With Reading Progress, students' reading performance can be reviewed and analyzed with recommendations on how they can improve their reading fluency.
 
-The Reading Progress data is available through Microsoft Educaation Insights and can be landed into your organization's data lake with our existing OEA Microsoft Education Insights module.
+The Reading Progress data is available through Microsoft Educaation Insights and can be landed into your organization's data lake with our existing [OEA Microsoft Education Insights module](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Education_Insights).
 
 Education Insights requires the implementation of [Microsoft School Data Sync](https://sds.microsoft.com/) on O365, which provides school and class roster data, to enable its reports in Teams. For production data, you will need an O365 education tenant as Microsoft Education Insights is only enabled for education tenants.
 
@@ -16,9 +16,6 @@ Text
 
 2. Follow the setup instructions to deploy the [Microsoft Education Insights module](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Education_Insights).
 
-#### OEA Digital Engagement Schema:
-
-After completing the setup of this module, the MS Education Insights activity schema can be transformed into the [OEA schema standard for digital engagement](https://github.com/microsoft/OpenEduAnalytics/tree/main/schemas/schema_catalog/Digital_Engagement_Schema). Refer to the documentation and assets to see how this module can be extended and standardized for OEA package-use.
 
 ## Data Sources
 
