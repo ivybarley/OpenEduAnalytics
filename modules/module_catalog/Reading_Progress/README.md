@@ -10,8 +10,8 @@ Reading fluency is top of mind for many educators and parents. Defined as a read
 Reading Progress, available in 100 languages, provides repeated oral reading practice for learners with the power of error analysis to identify how to support readers' fluency. This relieves pressure for students, reduces classroom disruption, and redirects educator time to targeted instruction.
 
 Reading Progress data can be used for different scenarios including:
-- Dashboards for education leaders to track student fluency practice at a school or district level.
-- Combining Reading Progress data with other data sources to show the relationship between reading fluency and other metrics like assessments and attendance, and student demographic data.
+- Dashboards for education leaders to track student reading fluency practice at a school or district level.
+- Combining Reading Progress data with other data sources to show the relationship between reading fluency and other metrics like assessments, attendance, and student demographic data.
 
 ## Module Setup Instructions
 1. Ensure you have proper [Azure subscription and credentials](https://github.com/microsoft/OpenEduAnalytics/tree/main/framework) and setup the [most recent version of OEA framework](https://github.com/microsoft/OpenEduAnalytics/tree/main/framework#setup-of-framework-assets). This will include the most recent version of the [OEA Python class](https://github.com/microsoft/OpenEduAnalytics/blob/main/framework/synapse/notebook/OEA_py.ipynb). 
@@ -21,7 +21,7 @@ Reading Progress data can be used for different scenarios including:
 ## Data Sources
 
 This module imports digital activity on reading fluency for an education system via [School Data Sync](https://sds.microsoft.com/).
-- [Digital Activity Data](https://docs.microsoft.com/en-us/schooldatasync/data-lake-schema-activity) provides a log of M365 signal activity from apps including Sharepoint, Teams Channel, Teams Meetings, Assignment Services, OneNote, Reading Progress, and Reflect.
+- [Digital Activity Data](https://docs.microsoft.com/en-us/schooldatasync/data-lake-schema-activity) provides a log of digital activity from Reading Progress.
 - [Rostering Data](https://docs.microsoft.com/en-us/schooldatasync/data-lake-schema-rostering) is concerned with students, teachers, courses, and schools relationships.
 - [Azure Active Directory Data](https://docs.microsoft.com/en-us/schooldatasync/data-lake-schema-azure-ad) provides people details and group memberships.
 
@@ -41,8 +41,8 @@ Out-of-the box assets for this OEA module include:
 | --- | --- |
 | [Reading Progress Product Guide](https://learn.microsoft.com/en-us/training/educator-center/product-guides/reading-progress/) | Intro to Reading Progress and what it offers. |
 | [Reading Progress Course](https://learn.microsoft.com/en-us/training/modules/support-reading-fluency-practice-with-reading-progress/) | Take the Reading Progress course on MS Learn. |
-| [Overview of Microsoft Education Insights](https://docs.microsoft.com/en-us/microsoftteams/class-insights) | Intro to Education Insights, what it can do, and what it can provide. |
 | [Demo Tenant for Reading Progress](https://learn.microsoft.com/en-us/partner-center/mpn-demos) | Get access to a demo tenant provisioning that comes with demo data and demo scripts for Reading Progress. |
+| [Overview of Microsoft Education Insights](https://docs.microsoft.com/en-us/microsoftteams/class-insights) | Intro to Education Insights, what it can do, and what it can provide. |
 
 ## Contributions from the Community
  
