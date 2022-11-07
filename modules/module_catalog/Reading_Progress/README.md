@@ -6,9 +6,9 @@
 With Reading Progress, students' reading performance can be reviewed and analyzed, and recommendations are provided on how students can improve their reading fluency and literacy.
 
 ## Problem Statement and Module Impact
-Reading fluency is top of mind for many educators and parents. Defined as a reader’s ability to read text with accuracy, speed, and expression, reading fluency is a reliable factor to determining whether a student comprehends text.
+Reading fluency is top of mind for many educators and parents. Defined as a reader’s ability to read text with accuracy, speed, and expression, reading fluency is a reliable factor to determining whether a student comprehends text. 
 
-Reading Progress, available in 100 languages, provides repeated oral reading practice for learners with the power of error analysis to identify how to support readers' fluency. This relieves pressure for students, reduces classroom disruption, and redirects educator time to targeted instruction.
+Reading Progress, available in 100 languages, provides repeated oral reading practice for learners with error analysis capabilities to identify how to support readers' fluency. This relieves pressure for students, reduces classroom disruption, helps to identify gaps in learning and saves teachers' time. It is designed to improve reading fluency for K-12 emerging readers, non-native readers, and those with dyslexia and other learning disabilities.
 
 Reading Progress data can be used for different scenarios including:
 - Dashboards for education leaders to track student reading fluency practice at a school or district level.
