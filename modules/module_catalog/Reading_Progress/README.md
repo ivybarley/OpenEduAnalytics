@@ -6,7 +6,7 @@
 With Reading Progress, educators can assign reading passages to students to be read out loud through an audio or video recording that is submitted to the educator.
  
 ## Problem Statement and Module Impact
-Reading fluency is top of mind for many educators and parents. Defined as a reader’s ability to read text with accuracy, speed, and expression, reading fluency is a reliable factor to determining a student comprehends text.
+Reading fluency is top of mind for many educators and parents. Defined as a reader’s ability to read text with accuracy, speed, and expression, reading fluency is a reliable factor to determining whether a student comprehends text.
 
 Reading Progress, available in 100 languages, provides repeated oral reading practice for learners with the power of error analysis to identify how to support readers' fluency. This relieves pressure for students, reduces classroom disruption, and redirects educator time to targeted instruction.
 
