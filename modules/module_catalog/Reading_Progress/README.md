@@ -21,7 +21,7 @@ Reading Progress data can be used for different scenarios including:
 
 ## Data Sources
 
-This module imports digital activity on reading fluency for an education system via [School Data Sync](https://sds.microsoft.com/).
+This module imports digital activity on reading fluency for an education system.
 - [Digital Activity Data](https://docs.microsoft.com/en-us/schooldatasync/data-lake-schema-activity) provides a log of digital activity from Reading Progress.
 - [Rostering Data](https://docs.microsoft.com/en-us/schooldatasync/data-lake-schema-rostering) is concerned with students, teachers, courses, and schools relationships.
 - [Azure Active Directory Data](https://docs.microsoft.com/en-us/schooldatasync/data-lake-schema-azure-ad) provides people details and group memberships.
