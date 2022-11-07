@@ -24,13 +24,9 @@ Reading Progress data can be used for different scenarios including:
 </p>
 
 1. Ensure you have proper [Azure subscription and credentials](https://github.com/microsoft/OpenEduAnalytics/tree/main/framework) and setup the [most recent version of OEA framework](https://github.com/microsoft/OpenEduAnalytics/tree/main/framework#setup-of-framework-assets). This will include the most recent version of the [OEA Python class](https://github.com/microsoft/OpenEduAnalytics/blob/main/framework/synapse/notebook/OEA_py.ipynb). 
-
 2. Follow the setup instructions to deploy the [Microsoft Education Insights module](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Education_Insights) (Reading Progress data is available through Microsoft Education Insights and can be landed into your organization's data lake with our existing Microsoft Education Insights module). 
-
 3. Import the Reading Progress module notebook into your Synapse workspace. This notebook contains data schema information and data writing functions needed to support module pipelines.
-
 4. Import the Reading Progress module pipeline template into your Synapse workspace and execute the pipeline.
-
 5. Download the module Power BI template file. Module test data is already imported into the Power BI. See the module Power BI page page for instructions for switching the Power BI template data source to import from your Synapse workspace data source.
 
 ## Data Sources
