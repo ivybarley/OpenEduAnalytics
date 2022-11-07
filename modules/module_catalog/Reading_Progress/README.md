@@ -5,6 +5,10 @@
 
 With Reading Progress, students' reading performance can be reviewed and analyzed, and recommendations are provided on how students can improve their reading fluency and literacy.
 
+<p align="center">
+  <img src="https://github.com/ivybarley/OpenEduAnalytics/blob/main/modules/module_catalog/Reading_Progress/docs/images/Reading_Progress_%20Module_Overview_Visual%20.png" alt="Microsoft Insights Visual"/>
+</p>
+
 ## Problem Statement and Module Impact
 Reading fluency is top of mind for many educators and parents. Defined as a reader’s ability to read text with accuracy, speed, and expression, reading fluency is a reliable factor to determining whether a student comprehends text. 
 
@@ -15,6 +19,10 @@ Reading Progress data can be used for different scenarios including:
 - Combining Reading Progress data with other data sources to show the relationship between reading fluency and other metrics like assessments, attendance, and student demographic data.
 
 ## Module Setup Instructions
+<p align="center">
+  <img src="https://github.com/ivybarley/OpenEduAnalytics/blob/main/modules/module_catalog/Reading_Progress/docs/images/Reading_Progress_Module%20_Setup_Instructions_Visual%20.png" alt="Microsoft Insights Visual"/>
+</p>
+
 1. Ensure you have proper [Azure subscription and credentials](https://github.com/microsoft/OpenEduAnalytics/tree/main/framework) and setup the [most recent version of OEA framework](https://github.com/microsoft/OpenEduAnalytics/tree/main/framework#setup-of-framework-assets). This will include the most recent version of the [OEA Python class](https://github.com/microsoft/OpenEduAnalytics/blob/main/framework/synapse/notebook/OEA_py.ipynb). 
 
 2. Follow the setup instructions to deploy the [Microsoft Education Insights module](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Education_Insights) (Reading Progress data is available through Microsoft Education Insights and can be landed into your organization's data lake with our existing Microsoft Education Insights module). 
