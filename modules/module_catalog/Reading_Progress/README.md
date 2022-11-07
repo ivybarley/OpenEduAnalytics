@@ -17,7 +17,7 @@ Reading Progress data can be used for different scenarios including:
 ## Module Setup Instructions
 1. Ensure you have proper [Azure subscription and credentials](https://github.com/microsoft/OpenEduAnalytics/tree/main/framework) and setup the [most recent version of OEA framework](https://github.com/microsoft/OpenEduAnalytics/tree/main/framework#setup-of-framework-assets). This will include the most recent version of the [OEA Python class](https://github.com/microsoft/OpenEduAnalytics/blob/main/framework/synapse/notebook/OEA_py.ipynb). 
 
-2. Follow the setup instructions to deploy the [Microsoft Education Insights module](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Education_Insights) (Reading Progress data is available through Microsoft Educaation Insights and can be landed into your organization's data lake with our existing Microsoft Education Insights module). 
+2. Follow the setup instructions to deploy the [Microsoft Education Insights module](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Education_Insights) (Reading Progress data is available through Microsoft Education Insights and can be landed into your organization's data lake with our existing Microsoft Education Insights module). 
 
 ## Data Sources
 
