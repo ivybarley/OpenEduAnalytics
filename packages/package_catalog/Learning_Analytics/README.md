@@ -18,7 +18,7 @@ The Learning Analytics package provides a dashboard that brings together signals
 The assets in this package can be combined with course completion, graduation rates, competency measures, or other outcome data to identify how these patterns relate to learning outcomes.
 
 ## Package Setup Instructions
-![](https://github.com/ivybarley/OpenEduAnalytics/blob/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/docs/images/Learning_Analytics_Microsoft_Teams_Package_Setup_Instructions.png)
+![](https://github.com/ivybarley/OpenEduAnalytics/blob/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/docs/images/Learning_Analytics_Package_Setup_Instructions.png)
 
 <ins><strong>Preparation:</ins></strong> Ensure you have proper [Azure subscription and credentials](https://github.com/microsoft/OpenEduAnalytics/tree/main/framework) and setup [v0.6.1 of the OEA framework](https://github.com/microsoft/OpenEduAnalytics/tree/main/framework#setup-of-framework-assets). This will include v0.6.1 of the [OEA Python class](https://github.com/microsoft/OpenEduAnalytics/blob/main/framework/synapse/notebook/OEA_py.ipynb).
 
