@@ -34,7 +34,7 @@ The assets in this package can be combined with course completion, graduation ra
 ## Data Sources
 This package combines multiple data sources: 
 * <strong>School Information System (SIS)</strong>: School, class, and roster.
-* <strong>Digital Engagement data from Microsoft Education Insights and Microsoft Graph </strong>: Application use, type of engagement (log-ins, meeting attendance duration, etc), date of the activity, user information of the activities, etc.
+* <strong>Digital Engagement data (from Microsoft Education Insights and Microsoft Graph) </strong>: Application use, type of engagement (log-ins, meeting attendance duration, etc), date of the activity, user information of the activities, etc.
 
 This package can use several [OEA Modules](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules) to help ingest data sources that are typically used to understand patterns seen in Learning Analytics (see below for list of relevant OEA modules). 
 
