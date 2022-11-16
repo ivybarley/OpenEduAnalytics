@@ -15,7 +15,7 @@ With varied modes of learning, learning platforms and learner needs, educators h
 
 The Learning Analytics package provides a dashboard that brings together signals on how students learn and complete a course to help educators improve overall class participation. Educators can identify which courses, classes and students have lower or higher levels of engagement and the trends over time.
 
-The assets in this package can be combined with course completion, graduation rates, competency measures, mastery data, or other outcome data to identify how these patterns relate to learning outcomes.
+The assets in this package can be combined with course completion, graduation rates, competency measures, or other outcome data to identify how these patterns relate to learning outcomes.
 
 ## Package Setup Instructions
 ![](https://github.com/ivybarley/OpenEduAnalytics/blob/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/docs/images/Learning_Analytics_Microsoft_Teams_Package_Setup_Instructions.png)
