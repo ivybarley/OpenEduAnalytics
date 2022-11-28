@@ -15,6 +15,13 @@ With varied modes of learning, learning platforms and learner needs, educators h
 
 This Package contains a set of assets that provides a professor or school leader with insights on learners' engagement, academic performance, and well-being at a class or course level. It brings together signals on how students learn and complete a course to help educators improve overall class participation. Educators can identify which courses, classes and students have lower or higher levels of engagement and the trends over time.
 
+With this package, educators can:
+* visualize student engagement before, during, and after class
+* see which students are late or missing class
+* compare student performance and indentify patterns within a course, like which assignments they struggle with and which ones might be too easy
+* identify students that might need help outside the course
+* identify which learning resources students use the most or least
+
 The assets in this package can be combined with course completion, graduation rates, competency measures, or other outcome data to identify how these patterns relate to learning outcomes.
 
 ## Package Setup Instructions
