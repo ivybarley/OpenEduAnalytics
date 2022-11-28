@@ -1,6 +1,6 @@
 # Learning Analytics Package
 
-**The OEA Learning Analytics Package provides assets to empower educators with insights to foster student well-being, drive student engagement and improve learning outcomes.**
+**The OEA Learning Analytics Package provides a set of assets to empower educators with insights to foster student well-being, drive student engagement and improve learning outcomes.**
 
 Data from apps on student digital engagement like Microsoft Education Insights and Microsoft Graph can be combined with other data sources for different Learning Analytics use cases. 
 
