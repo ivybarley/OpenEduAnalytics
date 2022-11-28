@@ -2,13 +2,13 @@
 
 The OEA Learning Analytics Package contains a set of assets that provides a professor or school leader with insights on learners' engagement, academics, use of resources and well-being at a class or course level. 
 
-Data from apps on student digital engagement including Microsoft Education Insights and Microsoft Graph can be combined with other data sources for different Learning Analytics use cases. 
+Data from apps on student digital engagement like Microsoft Education Insights and Microsoft Graph can be combined with other data sources for different Learning Analytics use cases. 
 
 This Learning Analytics package was primarily developed for higher education but can be modified for K-12 scenarios.
 
 1. <ins>Guidance and documentation:</ins> This package provides guidance on the end-to-end process of developing a Learning Analytics use case project through the problem statement and package impact. The [OEA Use Case Documentation](https://github.com/microsoft/OpenEduAnalytics/blob/main/docs/use_cases/Open_Education_Analytics_Use_Case_Template_v3.docx) should be completed when developing the production-level implementation of this package, including: how to engage stakeholders in the project, prior research on the use case problem domain and theory, how to map data sources to the theory of the problem, and how to implement Microsoft’s Principles of Responsible Data and AI. <em> It is highly recommended this document be reviewed and completed by any education system considering using this package, and that the documentation be revised to the specific data and decisions for that system’s context. </em>
 
-2. <ins>Technical assets:</ins> Various assets are freely available in this package to help accelerate implementation of Learning Analytics use cases. Assets include pipelines, notebooks for data processing, descriptions of data sources, and sample Power BI dashboards. See descriptions of technical assets below.
+2. <ins>Technical assets:</ins> Various assets are freely available in this package to help accelerate implementation of Learning Analytics use cases. Assets include pipelines, notebooks for data processing, a sample Power BI dashboard, and data dictionary. See descriptions of technical assets below.
 
 ## Problem Statement and Package Impact
 With varied modes of learning, learning platforms and learner needs, educators have challenges determining how students participate and learn in a class or course in-person, remotely and in hybrid settings. Due to this, they are not able to efficiently consolidate student learning activities and progress.
@@ -20,21 +20,19 @@ The assets in this package can be combined with course completion, graduation ra
 ## Package Setup Instructions
 ![](https://github.com/ivybarley/OpenEduAnalytics/blob/main/packages/package_catalog/Learning_Analytics/docs/images/Learning_Analytics_Package_Setup_Instructions.png)
 
-<ins><strong>Preparation:</ins></strong> Ensure you have proper [Azure subscription and credentials](https://github.com/microsoft/OpenEduAnalytics/tree/main/framework) and setup [v0.6.1 of the OEA framework](https://github.com/microsoft/OpenEduAnalytics/tree/main/framework#setup-of-framework-assets). This will include v0.6.1 of the [OEA Python class](https://github.com/microsoft/OpenEduAnalytics/blob/main/framework/synapse/notebook/OEA_py.ipynb).
+<ins><strong>Preparation:</ins></strong> Ensure you have proper [Azure subscription and credentials](https://github.com/microsoft/OpenEduAnalytics/tree/main/framework) and setup [the latest version of the OEA framework](https://github.com/microsoft/OpenEduAnalytics#setting-up-oea). This will include the latest version of the [OEA Python class](https://github.com/microsoft/OpenEduAnalytics/blob/main/framework/synapse/notebook/OEA_py.ipynb).
 
-1. Examine available data sources. See [below](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings#data-sources) for these related data sources. Choose which modules or data sources to implement.
-    * This package was developed using the following modules: [Contoso SIS](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Student_and_School_Data_Systems), [Microsoft Education Insights](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Education_Insights), and [Microsoft Graph Reports API](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Graph). 
+1. Examine available data sources. See [below](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics#data-sources) for these related data sources. Choose which modules or data sources to implement.
+    * This package was developed using the following modules: [Student and School Data Systems](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Student_and_School_Data_Systems), [Microsoft Education Insights](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Education_Insights), and [Microsoft Graph](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Graph). 
     * Run each of the module data pipelines to ingest the data into stage 2. 
-2. Use the [Digital Engagement Schema pipeline](https://github.com/microsoft/OpenEduAnalytics/tree/main/schemas/schema_catalog/Digital_Engagement_Schema/pipeline) and process the compatible modules to be ingested. This will combine all module tables into a unified table, and creates a single database for the Power BI dashboard. Visit the [Data](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/data) page for a detailed explanation of its use in the Power BI data model.
-3. Import and run the [Learning Analytics pipeline template](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/pipeline) to combine SIS data sources into a Power BI data model like the example provided in the [Data](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/data) page.
-    * This package pipeline aggregates SIS data from the [Microsoft Education Insights](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Microsoft_Education_Insights) and [Contoso SIS](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/module_catalog/Student_and_School_Data_Systems) modules into a single student table for details on the specific tables being used.
-4. Use the Power BI dashboard to explore the Learning Analytics use case. Note that all pipelines create SQL views which can be accessed via your Synapse workspace Serverless SQL endpoint. Example dashboard concepts are [provided in this package](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/powerbi).
-      *  More detailed information on the queries used are provided in the [Power BI folder](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics_Microsoft_Teams_Meetings/powerbi). 
+2. Use the [Digital Engagement Schema pipeline](https://github.com/microsoft/OpenEduAnalytics/tree/main/schemas/schema_catalog/Digital_Engagement_Schema/pipeline) and process the compatible modules to be ingested. This will combine all module tables into a unified table, and creates a single database for the Power BI dashboard. Visit the [Data](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics/data) page for a detailed explanation of its use in the Power BI data model.
+3. Import and run the [Learning Analytics pipeline template](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics/pipeline).
+4. Use the Power BI dashboard to explore the Learning Analytics use case. Note that all pipelines create SQL views which can be accessed via your Synapse workspace Serverless SQL endpoint. Example dashboard concepts and detailed information on the queries are [provided in the Power BI folder](https://github.com/ivybarley/OpenEduAnalytics/tree/main/packages/package_catalog/Learning_Analytics/powerbi).
       
 ## Data Sources
 This package combines multiple data sources: 
+* <strong>Digital Engagement data (from Microsoft Education Insights and Microsoft Graph) </strong>: Application use, type of engagement (log-ins, meeting attendance,  duration, etc), date of the activity, user information of the activities, etc.
 * <strong>School Information System (SIS)</strong>: School, class, and roster.
-* <strong>Digital Engagement data (from Microsoft Education Insights and Microsoft Graph) </strong>: Application use, type of engagement (log-ins, meeting attendance duration, etc), date of the activity, user information of the activities, etc.
 
 This package can use several [OEA Modules](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules) to help ingest data sources that are typically used to understand patterns seen in Learning Analytics (see below for list of relevant OEA modules). 
 
@@ -68,17 +66,10 @@ This package was developed by Microsoft Education. The architecture and referenc
 
 # Legal Notices
 
-Microsoft and any contributors grant you a license to the Microsoft documentation and other content
-in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
-see the [LICENSE](LICENSE) file, and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT), see the
-[LICENSE-CODE](LICENSE-CODE) file.
+Microsoft and any contributors grant you a license to the Microsoft documentation and other content in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode), see the [LICENSE](LICENSE) file, and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT), see the [LICENSE-CODE](LICENSE-CODE) file.
 
-Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
-may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
-The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
-Microsoft's general trademark guidelines can be found at http://go.microsoft.com/fwlink/?LinkID=254653.
+Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries. The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks. Microsoft's general trademark guidelines can be found at http://go.microsoft.com/fwlink/?LinkID=254653.
 
-Privacy information can be found at https://privacy.microsoft.com/en-us/
+Privacy information can be found at https://privacy.microsoft.com/en-us/.
 
-Microsoft and any contributors reserve all other rights, whether under their respective copyrights, patents,
-or trademarks, whether by implication, estoppel or otherwise.
+Microsoft and any contributors reserve all other rights, whether under their respective copyrights, patents, or trademarks, whether by implication, estoppel or otherwise.
