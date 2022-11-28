@@ -2,7 +2,7 @@
 
 **The OEA Learning Analytics Package provides a set of assets to empower educators with insights to foster student well-being, drive student engagement and improve learning outcomes.**
 
-Data from apps on student digital engagement like Microsoft Education Insights and Microsoft Graph can be combined with other data sources for different Learning Analytics use cases. 
+Data from student digital engagement apps like Microsoft Education Insights and Microsoft Graph can be combined with other data sources for different Learning Analytics use cases. 
 
 This Learning Analytics package was primarily developed for higher education but can be modified for K-12 scenarios.
 
@@ -13,12 +13,12 @@ This Learning Analytics package was primarily developed for higher education but
 ## Problem Statement and Package Impact
 With varied modes of learning, learning platforms and learner needs, educators have challenges determining how students engage and learn in a class or course in-person, remotely and in hybrid settings. Due to this, they are not able to efficiently consolidate student learning activities and progress and may overlook the impact of mental health on student engagement and academic performance.
 
-This Package contains a set of assets that provides a professor or school leader with insights on learners' engagement, academic performance, and well-being at a class or course level. It brings together signals on how students learn and complete a course to help educators improve overall class participation. Educators can identify which courses, classes and students have lower or higher levels of engagement and the trends over time.
+This package can provide professor or school leader with insights on learners' engagement, academic performance, and well-being at a class or course level. It brings together signals on how students learn and complete a course to help educators improve overall class participation. Educators can identify which courses, classes and students have lower or higher levels of engagement and the trends over time.
 
 With this package, educators can:
 * visualize student engagement before, during, and after class
 * see which students are late or missing class
-* compare student performance and indentify patterns within a course, like which assignments they struggle with and which ones might be too easy
+* compare student performance and indetify patterns within a course, like which assignments they struggle with and which ones might be too easy
 * identify students that might need help outside the course
 * identify which learning resources students use the most or least
 
