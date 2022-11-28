@@ -11,7 +11,7 @@ This Learning Analytics package was primarily developed for higher education but
 2. <ins>Technical assets:</ins> Various assets are freely available in this package to help accelerate implementation of Learning Analytics use cases. Assets include pipelines, notebooks for data processing, a sample Power BI dashboard, and data dictionary. See descriptions of technical assets below.
 
 ## Problem Statement and Package Impact
-With varied modes of learning, learning platforms and learner needs, educators have challenges determining how students engage and learn in a class or course in-person, remotely and in hybrid settings. Due to this, they are not able to efficiently consolidate student learning activities and progress.
+With varied modes of learning, learning platforms and learner needs, educators have challenges determining how students engage and learn in a class or course in-person, remotely and in hybrid settings. Due to this, they are not able to efficiently consolidate student learning activities and progress and may overlook the impact of mental health on student engagement and academic performance.
 
 This Package contains a set of assets that provides a professor or school leader with insights on learners' engagement, academic performance, and well-being at a class or course level. It brings together signals on how students learn and complete a course to help educators improve overall class participation. Educators can identify which courses, classes and students have lower or higher levels of engagement and the trends over time.
 
