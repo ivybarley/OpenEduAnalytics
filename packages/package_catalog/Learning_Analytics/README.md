@@ -1,10 +1,8 @@
 # Learning Analytics Package
 
-**The OEA Learning Analytics Package provides a set of assets to empower educators with insights to foster student well-being, drive student engagement and improve learning outcomes.**
+**The OEA Learning Analytics Package provides a set of assets to empower educators with insights that foster student well-being, drive student engagement and improve learning outcomes.**
 
-Data from student digital engagement apps like Microsoft Education Insights and Microsoft Graph can be combined with other data sources for different Learning Analytics use cases. 
-
-This Learning Analytics package was primarily developed for higher education but can be modified for K-12 scenarios.
+This Learning Analytics package was primarily developed for higher education but can be modified for K-12 scenarios. It can provide professor or school leader with insights on learners' engagement, academic performance, and well-being at a class or course level.
 
 1. <ins>Guidance and documentation:</ins> This package provides guidance on the end-to-end process of developing a Learning Analytics use case project through the problem statement and package impact. The [OEA Use Case Documentation](https://github.com/microsoft/OpenEduAnalytics/blob/main/docs/use_cases/Open_Education_Analytics_Use_Case_Template_v3.docx) should be completed when developing the production-level implementation of this package, including: how to engage stakeholders in the project, prior research on the use case problem domain and theory, how to map data sources to the theory of the problem, and how to implement Microsoft’s Principles of Responsible Data and AI. <em> It is highly recommended this document be reviewed and completed by any education system considering using this package, and that the documentation be revised to the specific data and decisions for that system’s context. </em>
 
@@ -13,7 +11,9 @@ This Learning Analytics package was primarily developed for higher education but
 ## Problem Statement and Package Impact
 With varied modes of learning, learning platforms and learner needs, educators have challenges determining how students engage and learn in a class or course in-person, remotely and in hybrid settings. Due to this, they are not able to efficiently consolidate student learning activities and progress and may overlook the impact of mental health on student engagement and academic performance.
 
-This package can provide professor or school leader with insights on learners' engagement, academic performance, and well-being at a class or course level. It brings together signals on how students learn and complete a course to help educators improve overall class participation. Educators can identify which courses, classes and students have lower or higher levels of engagement and the trends over time.
+This package brings together signals on how students learn and complete a course to help educators improve overall class participation. Educators can identify which courses, classes and students have lower or higher levels of engagement and the trends over time. 
+
+Data from student digital engagement apps like Microsoft Education Insights and Microsoft Graph can be combined with other data sources for different Learning Analytics use cases. 
 
 With this package, educators can:
 * visualize student engagement before, during, and after class
