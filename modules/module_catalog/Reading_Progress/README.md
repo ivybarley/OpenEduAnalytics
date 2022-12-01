@@ -3,7 +3,7 @@
 # Reading Progress Module
 [Reading Progress](https://learn.microsoft.com/en-us/training/educator-center/product-guides/reading-progress/) is a free tool in Microsoft Teams that helps students practice their reading fluency through independent reading practice. Educators can assign reading passages to students to be read out loud through an audio or video recording that is submitted to the educator.
 
-With Reading Progress, students' reading performance can be reviewed and analyzed, and recommendations are provided on how students can improve their reading fluency and literacy.
+With Reading Progress, students' reading performance can be reviewed and analyzed, and recommendations are provided on how students can improve their reading fluency and literacy. It provides personalized reading experiences and data-driven insights on student progress.
 
 <p align="center">
   <img src="https://github.com/ivybarley/OpenEduAnalytics/blob/main/modules/module_catalog/Reading_Progress/docs/images/Reading_Progress_%20Module_Overview_Visual%20.png" alt="Microsoft Insights Visual"/>
