@@ -178,3 +178,28 @@
 | |	created	| TIMESTAMP	| Time and date of count |
 | |	active	| INT |	Flag that indicates if the record is active or has been deleted.|
 | |	load_datetime |	TIMESTAMP |	Date and time of the record upload.|
+| 21 |	Id	| STRING	| Record identifier |
+| |	user_id	| STRING	| Student ID |
+| |	class_id |	STRING |	Class/group/section identifier |
+| |	sessions |	INT	| Number of sessions that occurred at the cut |
+| |	Attendance_percentage	| DECIMAL(18,4)	| % of attendance at the cut (0 to 1) |
+| |	created |	TIMESTAMP	| Date and time of report |
+| |	active |	INT |	Flag that indicates if the record is active or has been deleted. |
+| |	load_datetime |	TIMESTAMP |	Date and time of the record upload.|
+| 22 |	id	| STRING	| Record unique identifier |
+| |	user_id	| STRING	| Unique ID for user who provided the answer |
+| |	question_id	| INT	| Question identifier |
+| |	answer	| INT	| Answer’s numeric code |
+| |	created	| TIMESTAMP |	Date and time of answer creation |
+| |	active	| INT	| Flag that indicates if the record is active or has been deleted. |
+| |	load_datetime	| TIMESTAMP	| Date and time of the record upload. |
+| 23 | id	| STRING	| Record unique identifier |
+| |	program_id	| STRING	| Program unique ID |
+| |	user_id	| STRING	| Student ID |
+| |	active	| INT	| Flag that indicates if the record is active or has been deleted.|
+| |	load_datetime	| TIMESTAMP	| Date and time of the record upload.|
+| 24|	id	| STRING	| Record unique identifier |
+| |	course_id |	STRING |	Course unique ID |
+|	 | program_id	| STRING |	Program identifier |
+| |	active |	INT |	Flag that indicates if the record is active or has been deleted.|
+|	| load_datetime	| TIMESTAMP	| Date and time of the record upload.|
