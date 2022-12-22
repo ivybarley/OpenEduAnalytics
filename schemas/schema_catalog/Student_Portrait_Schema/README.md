@@ -127,7 +127,7 @@
 | |	user_id	| STRING	| Student ID |
 | |	created	| TIMESTAMP |	Post date and time of publishing |
 | | post_text	| STRING	| Post text |
-| |	Grade	DECIMAL(18,4) |	Standardized grade on a scale of 0 to 1, where 0 is the lowest possible grade and 1 is the highest possible grade |
+| |	Grade	| DECIMAL(18,4) |	Standardized grade on a scale of 0 to 1, where 0 is the lowest possible grade and 1 is the highest possible grade |
 | |	completed |	INT |	Flag indicating whether this attempt completes participation in the forum.|
 | |	active |	INT	| Flag that indicates if the record is active or has been deleted.|
 | |	load_datetime	| TIMESTAMP |	Date and time of the record upload.|
@@ -146,3 +146,35 @@
 | |	completed |	INT |	Flag indicating whether this attempt completes participation in the quiz |
 | |	active |	INT |	Flag that indicates if the record is active or has been deleted. |
 | |	load_datetime	| TIMESTAMP	| Date and time of the record upload.|
+| 17 |	id |	STRING	| Lesson attempt identifier |
+| |	min_seen_datetime	| TIMESTAMP	| Minimum date and time that the student was seen during the attempt |
+| |	max_seen_datetime |	TIMESTAMP |	Maximum date and time that the student was seen during the attempt |
+| |	correct_answers	| INT	| Number of correct answers |
+| |	user_id	| STRING	| Student ID |
+| |	lesson_id	| STRING	| Lesson identifier |
+| |	completed	| INT	| Flag indicating whether this attempt completes participation in the lesson |
+| |	grade| 	DECIMAL(18,4) |	Standardized grade on a scale of 0 to 1, where 0 is the lowest possible grade and 1 is the highest possible grade |
+| |	active	| INT	| Flag that indicates if the record is active or has been deleted.|
+| |	load_datetime |	TIMESTAMP |	Date and time of the record upload.|
+| 18|	id	| STRING	| Message identifier |
+| |	from_user_id |	STRING	| Sender identifier |
+| |	to_user_id |	STRING	| Recipient identifier |
+| |	created	| TIMESTAMP	| Date and time the message was sent |
+| |	message_text |	STRING |	Message text |
+|	| active |	INT	| Flag that indicates if the record is active or has been deleted.|
+| |	load_datetime |	TIMESTAMP	| Date and time of the record upload.|
+| 19	|id	|STRING	| Message identifier |
+| |	from_user_id	| STRING	| Sender identifier |
+| |	to_user_id	| STRING	| Recipient identifier |
+| |	class_id |	STRING |	Class/group/section identifier |
+|	| created	| TIMESTAMP |	Date and time the message was sent |
+| |	message_text |	STRING |	Message text |
+| |	active	| INT	| Flag that indicates if the record is active or has been deleted. |
+| |	load_datetime |	TIMESTAMP	| Date and time of the record upload. |
+| 20 |	Id	| STRING |	Record identifier |
+| |	user_id |	STRING |	Student ID |
+| |	class_id | STRING |	Class/group/section identifier |
+| |	page_views |	INT	| Total number of pages visited up to the current date |
+| |	created	| TIMESTAMP	| Time and date of count |
+| |	active	| INT |	Flag that indicates if the record is active or has been deleted.|
+| |	load_datetime |	TIMESTAMP |	Date and time of the record upload.|
