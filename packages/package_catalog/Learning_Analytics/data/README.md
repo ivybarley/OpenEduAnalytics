@@ -44,63 +44,44 @@ Below is the data dictionary for this Learning Analytics package.
 |**dim_Assignment** |  AssignmentID    | String |  Assignment ID (Primary Key) |
 |  | AssignmentDate     | DateTime | Date and time assignment was given  |
 |  | DueDate     | DateTime | Date and time assignment is due  |
-|**dim_SignalType** |      | |   |
-|  |      | |   |
-|  |      | |   |
-|**fact_Enrollment** |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|**fact_MeetingAttendance** |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|**fact_Assignment** |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|**fact_Activity** |  SignalType    |String |Type of signal for a student in a section |
-|  | StartTime     |DateTime |Signal action time |
-|  | SignalId   |String |Unique ID per student signal |
-|  | AppName    |String |Application used: Assignments, SharePoint Online, etc |
-|  | StudentId_external_pseudonym     |String |Hashed external student ID (from the Insights AAD User table) |
-|  | MeetingSessionId     |String |Meeting Session ID, unqiue per section per meeting |
-|  | Date    |Date |Date of activity |
-|  |      | |   |
-|  |      | |   |
-
-
-
-|**studentattendance_lookup** | Student_id     | String | Student id |
-|  | school_year     |Integer |School year |
-|  | studentId_internal_pseudonym    |String |Hashed internal student ID (from the Insights Person table) |
-|**studentattendance_pseudo** | id     | Integer | ID |
-|  | studentId_pseudonym    |String |Hashed student ID |
-|  | school_year     |Integer |School year |
-|  | school_id     |String |School ID |
-| |  attendance_date    | DateTime| Date of attendance |
-| |  all_day    | String | Whether the student attended all day |
-| |  Period    | Integer| Period |
-| |  section_id    | String| Section ID|
-| | AttendanceCode     | String| P for present and A for absent |
-| | PresenceFlag     | Integer| 1 for present and 0 for absent |
-| |  attendance_status    | String| Whether the student attended class |
-| | attendance_type     | String | Type of attendance|
-| | attendance_sequence     |String |Sequence of attendance |
+|**dim_SignalType** | SignalTypeID     | String |  Signal type ID (Primary Key) |
+|  | SignalCategory     | String |  Signal category |
+|  |  SignalType    | String | Signal type  |
+|**fact_Enrollment** |  EnrollmentID    | String | Enrollment ID (Primary Key)  |
+|  | SchoolID     | String | School ID  |
+|  |  CourseID    | String |  Course ID |
+|  |  SectionID   | String |  Section ID |
+|  |  InstructorID    | String | Instructor ID   |
+|  |  StudentID    | String | Student ID  |
+|  |   EntryDate   | Date | Date of entry  |
+|  |  ExitDate    | Date | Date of exit  |
+|**fact_MeetingAttendance** |  MeetingAttendanceID    | String | Meeting attendance ID (Primary Key)  |
+|  | SchoolID     | String | School ID  |
+|  |  CourseID    | String |  Course ID |
+|  |  SectionID   | String |  Section ID |
+|  |  InstructorID    | String | Instructor ID   |
+|  |  StudentID    | String | Student ID   |
+|  |  MeetingID    | String | Meeting ID  |
+|  |  JoinTime    | DateTime | Date and time of joining meeting  |
+|  |  LeaveTime    | DateTime | Date and time of leaving meeting   |
+|  |  AttendanceTime_sec    | Integer | Time in attendance (in seconds)  |
+|**fact_Assignment** |  AssignmentDetailID    | String| Assignment detail ID (Primary Key) |
+|  | AssignmentID     | String |   |
+|  | SchoolID     | String | School ID  |
+|  |  CourseID    | String |  Course ID |
+|  |  SectionID   | String |  Section ID |
+|  |  InstructorID    | String | Instructor ID   |
+|  |  StudentID    | String | Student ID   |
+|  |  AssignmentStatusID    | String | Assignment status ID  |
+|  |  AssignedDate    | DateTime |  Date and time assignment was given |
+|  |  DueDate    | DateTime |  Date and time assignment is due |
+|  |  Grade    | Integer | Student grade  |
+|**fact_Activity** |  ActivityID    |String |Activity ID (Primary Key) |
+|  | SchoolID     | String | School ID  |
+|  |  CourseID    | String |  Course ID |
+|  |  SectionID   | String |  Section ID |
+|  |  InstructorID    | String | Instructor ID   |
+|  |  StudentID    | String | Student ID   |
+|  | SignalTypeID    |String | Signal Type ID |
+|  | ActivityDate    | DateTime | Date of activity  |
+|  | StartTime     | DateTime | Date and time the activity started  |
