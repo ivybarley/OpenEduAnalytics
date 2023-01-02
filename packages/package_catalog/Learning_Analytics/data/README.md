@@ -10,11 +10,23 @@ Below is the data dictionary for this Learning Analytics package.
 | | Month     |Integer |Month |
 | | Month of School Year     | Integer |Month of school year |
 | | Week of Year     |Integer |Week of the year |
-|**dim_School** |      | |   |
+|**dim_School** | SchoolID     | |   |
+|  | SchoolName     | |   |
+|  | Country     | |   |
+|  | Latitude     | |   |
+|  | Longitude     | |   |
 |**dim_Course** |      | |   |
-|**dim_Section** | SectionName     | String|Name of the section  |
-|  | SectionId     |String |Section ID|
+|  |      | |   |
+|  |      | |   |
+|**dim_Section** | SectionID     | String| Section ID (Primary Key) |
+|  |  SectionName   |String | Name of the section |
+|  | SectionStartDate     | Date |   |
+|  | SectionEndDate    | Date |    |
+|  | CalendarCycle     | |   |
 |**dim_Instructor** |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
 |**dim_Student** |  StudentId_external_pseudonym    |String |Hashed external student ID (from the Insights AAD User table) |
 |  | Surname     |String |Surname of student |
 || GivenName     |String |First name of student|
@@ -26,12 +38,44 @@ Below is the data dictionary for this Learning Analytics package.
 |  | meetingStartDateTime    |DateTime |DateTime |
 |  | meetingEndDateTime    |DateTime |Meeting end date and time (from Graph data) |
 |  | SectionId    |String |Section ID |
+|  |      | |   |
 |**dim_AssignmentStatus** |      | |   |
+|  |      | |   |
 |**dim_Assignment** |      | |   |
+|  |      | |   |
+|  |      | |   |
 |**dim_SignalType** |      | |   |
+|  |      | |   |
+|  |      | |   |
 |**fact_Enrollment** |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
 |**fact_MeetingAttendance** |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
 |**fact_Assignment** |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
+|  |      | |   |
 |**fact_Activity** |  SignalType    |String |Type of signal for a student in a section |
 |  | StartTime     |DateTime |Signal action time |
 |  | SignalId   |String |Unique ID per student signal |
@@ -39,7 +83,8 @@ Below is the data dictionary for this Learning Analytics package.
 |  | StudentId_external_pseudonym     |String |Hashed external student ID (from the Insights AAD User table) |
 |  | MeetingSessionId     |String |Meeting Session ID, unqiue per section per meeting |
 |  | Date    |Date |Date of activity |
-
+|  |      | |   |
+|  |      | |   |
 
 
 
