@@ -10,30 +10,30 @@ Below is the data dictionary for this Learning Analytics package.
 | | Month     |Integer |Month |
 | | Month of School Year     | Integer |Month of school year |
 | | Week of Year     |Integer |Week of the year |
-|**dim_School** | SchoolID     | |   |
-|  | SchoolName     | |   |
-|  | Country     | |   |
-|  | Latitude     | |   |
-|  | Longitude     | |   |
-|**dim_Course** |      | |   |
-|  |      | |   |
-|  |      | |   |
+|**dim_School** | SchoolID     | String | School ID (Primary Key) |
+|  | SchoolName     | String | Name of school  |
+|  | Country     | String | Country  |
+|  | Latitude     | String | Latitude  |
+|  | Longitude     | String | Longitude  |
+|**dim_Course** | CourseID     | String | Course ID (Primary Key)  |
+|  |  CourseName    | String | Name of course  |
+|  |  CourseGradeLevel    | String | Grade level of course  |
 |**dim_Section** | SectionID     | String| Section ID (Primary Key) |
 |  |  SectionName   |String | Name of the section |
-|  | SectionStartDate     | Date |   |
-|  | SectionEndDate    | Date |    |
-|  | CalendarCycle     | |   |
-|**dim_Instructor** |      | |   |
-|  |      | |   |
-|  |      | |   |
-|  |      | |   |
-|**dim_Student** |  StudentId_external_pseudonym    |String |Hashed external student ID (from the Insights AAD User table) |
-|  | Surname     |String |Surname of student |
-|| GivenName     |String |First name of student|
-|            | MiddleName   |String    |Middle name of student |   
-|            | PersonRole   |String    |Role of person |    
-|  | StudentGrade     |String |Grade level of student |
-|  | SchoolName    |String |Name of the school the student attends  |
+|  | SectionStartDate     | Date |  Section start date |
+|  | SectionEndDate    | Date | Section end date   |
+|  | CalendarCycle     | String | Calendar cycle  |
+|**dim_Instructor** | InstructorID     | String | Instructor ID (Primary Key)  |
+|  |  GivenName    | String | First name of instructor  |
+|  |   MiddleName   | String | Middle name of instructor  |
+|  |   Surname   | String | Surname of instructor  |
+|**dim_Student** |  StudentID   |String | Student ID (Primary Key)|
+|  | GivenName     |String |First name of student |
+|  | MiddleName     |String |Middle name of student|
+|  | Surname   |String    |Surname of student |   
+|  | UPN   |String    |User principal name |    
+|  | DoB     |Date |Date of birth |
+|  | Address    |String |Address of student  |
 |**dim_Meeting** | meetingId     |String |Meeting ID  |
 |  | meetingStartDateTime    |DateTime |DateTime |
 |  | meetingEndDateTime    |DateTime |Meeting end date and time (from Graph data) |
