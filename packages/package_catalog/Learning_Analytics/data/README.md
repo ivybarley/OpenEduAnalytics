@@ -34,16 +34,16 @@ Below is the data dictionary for this Learning Analytics package.
 |  | UPN   |String    |User principal name |    
 |  | DoB     |Date |Date of birth |
 |  | Address    |String |Address of student  |
-|**dim_Meeting** | meetingId     |String |Meeting ID  |
-|  | meetingStartDateTime    |DateTime |DateTime |
-|  | meetingEndDateTime    |DateTime |Meeting end date and time (from Graph data) |
-|  | SectionId    |String |Section ID |
-|  |      | |   |
-|**dim_AssignmentStatus** |      | |   |
-|  |      | |   |
-|**dim_Assignment** |      | |   |
-|  |      | |   |
-|  |      | |   |
+|**dim_Meeting** | MeetingID     |String |Meeting ID (Primary Key) |
+|  | MeetingType    | String | Type of meeting |
+|  | StartTime    |DateTime |Meeting start date and time |
+|  | EndTime    |DateTime |Meeting end date and time |
+|  | MeetingDuration     | Integer | Duration of meeting  |
+|**dim_AssignmentStatus** |  AssignmentStatusID    | String | Assignment status ID (Primary Key)  |
+|  | AssignmentStatus     | String | Assignment status  |
+|**dim_Assignment** |  AssignmentID    | String |  Assignment ID (Primary Key) |
+|  | AssignmentDate     | DateTime | Date and time assignment was given  |
+|  | DueDate     | DateTime | Date and time assignment is due  |
 |**dim_SignalType** |      | |   |
 |  |      | |   |
 |  |      | |   |
